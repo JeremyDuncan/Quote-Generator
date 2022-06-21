@@ -60,7 +60,7 @@ class ReactApp extends React.Component {
           <button id="but" onClick={this.getRandomQuote}>New Quote</button >
         </div>
         <div >
-          <a id="tweet-quote" src target="_blank" href="twitter.com/intent/tweet"><i class="fa fa-twitter"></i></a>
+          <a id="tweet-quote" src target="_blank" href="https://www.twitter.com/intent/tweet"><i class="fa fa-twitter"></i></a>
         </div>
       </div>
     );
