@@ -6,7 +6,7 @@ class ReactApp extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      quoteId: 99,
+      quoteId: 1,
       quoteAuthor: [
         "Bill Gates", 
         "Steve Jobs", 
@@ -44,7 +44,7 @@ class ReactApp extends React.Component {
   }
   
   // calls getRandomQuote on load to randomly generate quote
-  
+
   render() {
     let id = this.state.quoteId
     onload = this.getRandomQuote
