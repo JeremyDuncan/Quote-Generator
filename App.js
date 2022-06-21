@@ -47,7 +47,6 @@ class ReactApp extends React.Component {
 
   render() {
     let id = this.state.quoteId
-    onload = this.getRandomQuote
     return (
       <div id="quote-box">
         <div id="text">
