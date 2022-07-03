@@ -41,3 +41,8 @@ margin-bottom: .5rem;
   color: black;
   margin-left: 40px;
 }
+.footer {
+  display: flex;
+  justify-content:space-evenly;
+  margin-top: 30px;
+}
