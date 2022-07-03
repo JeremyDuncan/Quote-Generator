@@ -48,20 +48,26 @@ class ReactApp extends React.Component {
   render() {
     let id = this.state.quoteId
     return (
-      <div id="quote-box">
-        <div id="text">
-          <Text text={this.state.quote[id]} />
+      <div>
+        <div id="quote-box">
+          <div id="text">
+            <Text text={this.state.quote[id]} />
+          </div>
+          <div id="author">
+            <Author author={this.state.quoteAuthor[id]}/>
+          </div>
+          <div id="new-quote">
+            <button id="but" onClick={this.getRandomQuote}>New Quote</button >
+          </div>
+          <div >
+            <a id="tweet-quote" src target="_blank" href="https://www.twitter.com/intent/tweet"><i class="fa fa-twitter"></i></a>
+          </div>
         </div>
-        <div id="author">
-          <Author author={this.state.quoteAuthor[id]}/>
+          <div className="footer">
+          <div id="name">Jeremy Duncan &copy; 2022</div>
+          <div id="page"><a href="https://github.com/JeremyDuncan">Jeremy's GitHub</a> </div>
         </div>
-        <div id="new-quote">
-          <button id="but" onClick={this.getRandomQuote}>New Quote</button >
-        </div>
-        <div >
-          <a id="tweet-quote" src target="_blank" href="https://www.twitter.com/intent/tweet"><i class="fa fa-twitter"></i></a>
-        </div>
-      </div>
+       </div>
     );
   }
 }       
